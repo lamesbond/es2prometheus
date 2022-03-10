@@ -1,0 +1,26 @@
+es:
+  host: 192.168.80.44
+  port: 9200
+index: '*server*'
+queries:
+  - name: error_log_agps_server_device_download_100
+    description: "single agps device downloaded over 100 times"
+    error_log_keyword: "The device has downloaded files more than 100 times"
+  - name: error_log_agps_filesync_download_vendor_files
+    description: "count of agps filesync download supply files failed"
+    error_log_keyword: "Failed to download file! agps-file-sync-server"
+  - name: error_log_agps_server_sync_files
+    description: "count of agps server sync files failed"
+    error_log_keyword: "Failed to synchronize file! agps-server"
+  - name: error_log_mail_connect_exception
+    description: "unable connect to main server"
+    error_log_keyword: "MailConnectException"
+  - name: error_log_mail_address_error
+    description: "mail address error"
+    error_log_keyword: "mail.internet.AddressException"
+  - name: error_log_ssh_failed_login
+    description: "ssh login failed"
+    error_log_keyword: "Failed password for invalid user"
+  - name: error_log_mysql_insert_too_long
+    description: "columes insert into database too long"
+    error_log_keyword: "Data too long for column"
