@@ -1,6 +1,8 @@
 es:
-  host: 192.168.80.44
-  port: 9200
+#  host: 192.168.80.44
+#  port: 9200
+  host: queclink.3322.org
+  port: 20644
 index: '*server*'
 queries:
   - name: error_log_agps_server_device_download_100
